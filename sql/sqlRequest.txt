@@ -1,3 +1,0 @@
-CREATE DATABASE electives;
-
-CREATE TABLE lecturer (PRIMARY KEY id INTEGER,name VARCHAR(20), surname VARCHAR(20), patronymic VARCHAR(20));
