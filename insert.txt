@@ -1,0 +1,91 @@
+/*insert into user table*/
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("kolyan", "1234", "Kolyan", "Radkevich", "Leonidovich", "student");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("vadim", "1234", "Vadim", "Troshko", "Vladimirovich", "student");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("alena", "1234", "Alena", "Zimnitskaya", "Viktorovna", "student");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("andrey", "1234", "Andrey", "Zaitsev", "Yuryevich", "student");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("masha", "1234", "Masha", "Zaitseva", "Viktorovna", "student");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("sergey", "1234", "Sergey", "Ermachenko", "Alexnadrovich", "adnmin");
+
+INSERT INTO user (login, password, name, surname, patronymic, role)
+VALUES ("olga", "1234", "Olga", "Kazantseva", "Genadyevna", "lecturer");
+
+/*insert into lecturer table*/
+INSERT INTO lecturer (id, degree)
+VALUES (6, "degree");
+
+INSERT INTO lecturer (id, degree)
+VALUES (7, "degree");
+
+/*insert into student table*/
+INSERT INTO student (id, year)
+VALUES (1, "p51");
+
+INSERT INTO student (id, year)
+VALUES (2, "p51");
+
+INSERT INTO student (id, year)
+VALUES (3, "p51");
+
+INSERT INTO student (id, year)
+VALUES (4, "p52");
+
+INSERT INTO student (id, year)
+VALUES (5, "p52");
+
+/*insert into course table*/
+INSERT INTO course (name, lecturer_id, start_date, end_date, is_open)
+VALUES ("java programming", 6, '2015-11-01','2015-11-30',0);
+
+INSERT INTO course (name, lecturer_id, start_date, end_date, is_open)
+VALUES ("mechanics", 6, '2015-9-01','2015-12-30',0);
+
+INSERT INTO course (name, lecturer_id, start_date, end_date, is_open)
+VALUES ("mySQL", 7, '2015-9-01','2015-12-25',0);
+
+INSERT INTO course (name, lecturer_id, start_date, end_date, is_open)
+VALUES ("web-design", 7, '2015-10-11','2015-11-27',0);
+
+/*insert into list table*/
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (1, 1, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (1, 2, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (1, 3, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (2, 1, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (2, 2, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (2, 3, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (2, 4, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (2, 5, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (3, 1, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (3, 3, "пока что поле обязательное", 0);
+
+INSERT INTO list (course_id, student_id, review, mark)
+VALUES (4, 2, "пока что поле обязательное", 0);

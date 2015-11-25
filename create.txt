@@ -1,0 +1,55 @@
+CREATE DATABASE electives;
+
+USE electives;
+
+CREATE TABLE User (
+	id int NOT NULL AUTO_INCREMENT,
+	login varchar(100) NOT NULL,
+	password varchar(100) NOT NULL,
+	name varchar(100) NOT NULL,
+	surname varchar(100) NOT NULL,
+	patronymic varchar(100) NOT NULL,
+	role varchar(100) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Student (
+	id int NOT NULL AUTO_INCREMENT,
+	year varchar(100) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Lecturer (
+	id int NOT NULL AUTO_INCREMENT,
+	degree varchar(100) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Course (
+	id int NOT NULL AUTO_INCREMENT,
+	name varchar(100) NOT NULL,
+	lecturer_id int NOT NULL,
+	start_date DATE NOT NULL,
+	end_date DATE NOT NULL,
+	is_open BINARY NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE List (
+	id int NOT NULL AUTO_INCREMENT,
+	course_id int NOT NULL,
+	student_id int NOT NULL,
+	review TEXT,
+	mark int,
+	PRIMARY KEY (id)
+);
+
+ALTER TABLE Student ADD CONSTRAINT Student_fk0 FOREIGN KEY (id) REFERENCES User(id);
+
+ALTER TABLE Lecturer ADD CONSTRAINT Lecturer_fk0 FOREIGN KEY (id) REFERENCES User(id);
+
+ALTER TABLE Course ADD CONSTRAINT Course_fk0 FOREIGN KEY (lecturer_id) REFERENCES Lecturer(id);
+
+ALTER TABLE List ADD CONSTRAINT List_fk0 FOREIGN KEY (course_id) REFERENCES Course(id);
+
+ALTER TABLE List ADD CONSTRAINT List_fk1 FOREIGN KEY (student_id) REFERENCES Student(id);
