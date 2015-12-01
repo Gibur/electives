@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+D:\Учеба\epam\JavaWorkspace\electives\.metadata\.plugins\org.eclipse.jdt.core
+2035554723.index
+746519164.index
+3899914096.index
+3193006064.index
+1195470921.index
+4146572984.index
+1929396291.index
+1299854361.index
+2589001729.index
+221081594.index
+3349437070.index
+3092092397.index
+3190770268.index
+1729207038.index
+2998212994.index
+4044200546.index
+3527009751.index
+1638338953.index
+1570939741.index

@@ -1,0 +1,7 @@
+package dao.pool;
+
+import java.sql.Connection;
+
+public class PooledConnection implements Connection {
+
+}

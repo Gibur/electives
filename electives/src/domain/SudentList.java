@@ -1,5 +1,6 @@
 package domain;
 
+@SuppressWarnings("serial")
 public class SudentList extends Entity {
 	private int courseID;
 	private int studentID;

@@ -1,6 +1,9 @@
 package domain;
 
-public class Entity {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Entity implements Serializable{
 	private int id;
 
 	public void setId(int id) {

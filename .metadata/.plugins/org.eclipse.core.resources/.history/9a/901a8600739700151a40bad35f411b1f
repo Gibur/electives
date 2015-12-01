@@ -1,0 +1,5 @@
+package dao.pool;
+
+public class PooledConection {
+
+}

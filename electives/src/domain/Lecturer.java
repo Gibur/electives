@@ -1,5 +1,6 @@
 package domain;
 
+@SuppressWarnings("serial")
 public class Lecturer extends User {
 	private String degree;
 

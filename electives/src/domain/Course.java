@@ -2,6 +2,7 @@ package domain;
 
 import javax.xml.crypto.Data;
 
+@SuppressWarnings("serial")
 public class Course extends Entity {
 	private int lecturerID;
 	private Data startDate;
